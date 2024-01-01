@@ -1,0 +1,29 @@
+Node Js:
+========
+
+Node Js is a run time execution environment that excutes  Javascript code outside browser(servers).
+
+-> intially node js is client side scripting menas always executes by browsers, in 2009 rhyan dhan made 
+
+NodeJs = c++ and chrome v8 enjine 
+
+-> It build at google chrome JS v8 engine
+
+Features:
+========
+
+-> Dynamic web pages : server-side we can make dynamic apps
+
+-> Free to use and open source
+-> cross platform --supports all operating sustems
+-> Very fastest language beacuse internally used js v8 engine 
+-> I/O -non blocking model: the file and db operations done asynchromously means server executes another request while file /db connection or response underprocesss
+
+
+Applications:
+============
+
+-> I/O bound Applications
+-> live data streaming Applications
+-> Json api based Applications
+-> SPA
