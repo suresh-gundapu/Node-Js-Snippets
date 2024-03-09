@@ -27,7 +27,7 @@ export.title = a;
 destination_module.js:
 -----------------------
 
-var refVar = require("./source_module.js:");
+var refVar = require("./source_module.js");
 
 console.log('refVar.title');
 
@@ -37,4 +37,4 @@ Types of modules:
 
 1)Core modules or pre defined ex: fs, http , query string modules etc., 
 2) Local Modules ex: custom modules
-3) Third Party modules ex: cors,mysql
+3) Third Party modules ex: cors,mysql,express
