@@ -14,12 +14,21 @@ var fs = require("fs");
 
 var server = http.createServer((req, res) => {
   console.log("request recieved");
-  var filename;
-  if (req.url == "/home")
-   filename = "index.html";
-  else if (req.url == "/about")
-   filename = "about.html";
-  fs.readFile(filename, "utf8", (err, data) => {
+  if (req.url == "/home"){
+    fs.readFile("index.html", "utf8", (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.write("unable to read file");
+      } else {
+        res.setHeader("content-type", "text/html");
+        res.write(data);
+      }
+      res.end();
+    });
+  }
+  
+  else if (req.url == "/about"){
+  fs.readFile("about.html", "utf8", (err, data) => {
     if (err) {
       res.writeHead(500);
       res.write("unable to read file");
@@ -29,6 +38,11 @@ var server = http.createServer((req, res) => {
     }
     res.end();
   });
+}
+else{
+  res.write('No page Serve');
+  res.end();
+}
 });
 
 server.listen(7070, () => {
