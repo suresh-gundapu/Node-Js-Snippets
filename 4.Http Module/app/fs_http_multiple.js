@@ -14,9 +14,10 @@ var fs = require("fs");
 
 var server = http.createServer((req, res) => {
   console.log("request recieved");
-  if (req.url == "/home")
+  if (req.url == "/home") {
   var filename = "index.html";
-  else if (req.url == "/about")
+  }
+  else if (req.url == "/about"){
   var filename = "about.html";
   fs.readFile(filename, "utf8", (err, data) => {
     if (err) {
@@ -28,6 +29,11 @@ var server = http.createServer((req, res) => {
     }
     res.end();
   });
+}
+else{
+  res.write('No page Serve');
+  res.end();
+}
 });
 
 server.listen(7070, () => {
