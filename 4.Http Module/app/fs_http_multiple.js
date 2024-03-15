@@ -14,11 +14,10 @@ var fs = require("fs");
 
 var server = http.createServer((req, res) => {
   console.log("request recieved");
-  var filename;
   if (req.url == "/home")
-   filename = "index.html";
+  var filename = "index.html";
   else if (req.url == "/about")
-   filename = "about.html";
+  var filename = "about.html";
   fs.readFile(filename, "utf8", (err, data) => {
     if (err) {
       res.writeHead(500);
