@@ -1,0 +1,12 @@
+{
+  "name": "mustache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express":"latest",
+    "mustache-express": "latest"
+  },
+  "author": "suresh gundapu",
+  "license": "ISC"
+}

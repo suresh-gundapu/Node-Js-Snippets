@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+</head>
+<body>
+  <h1>This is home Page</h1>
+  <a href="/home">Home</a>
+  <a href="/about">About</a>
+
+  <h2>Students details:</h2>
+
+  <p>Student Name:<%=name%></p>
+  <p>Student email:<%=email%></p>
+
+  <p>Student phone:<%=phone%></p>
+<hr>
+<h2>Marks</h2>
+<%if(marks >= 30){ %>
+<p>Pass</p>
+<%}else{%>
+<p>Fail</p>
+<%}%>
+
+<table border="5">
+  <thead>
+    <tr>
+      <th>Subject Name</th>
+      <th>Marks</th>
+    </tr>
+
+  </thead>
+  <tbody>
+    <% for( var i =0 ;i< subjects.length;i++) {%>
+
+    <tr>
+      <td> <%=subjects[i].subjectName%></td>
+
+      <td> <%=subjects[i].marks%></td>
+    
+    </tr>
+    <%}%>
+
+  </tbody>
+</table>
+
+<%- include('searchbox'); -%>
+
+
+</body>
+</html>

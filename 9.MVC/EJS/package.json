@@ -1,0 +1,16 @@
+{
+  "name": "ejs",
+  "version": "1.0.0",
+  "description": "EJS view template",
+  "main": "ejsSample.js",
+  "dependencies": {
+    "express": "latest",
+    "ejs":"latest"
+  },
+  "keywords": [
+    "ejs",
+    "express"
+  ],
+  "author": "suresh gundapu",
+  "license": "MIT"
+}

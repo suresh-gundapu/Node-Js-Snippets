@@ -4,6 +4,10 @@
 /node_modules
 /5.Express Package/node_modules
 /6.Routing/node_modules
+/9.MVC/EJS/node_modules
+/9.MVC/Mustache/node_modules
+/18.API Development/node_modules
+
 
 /.pnp
 .pnp.js
