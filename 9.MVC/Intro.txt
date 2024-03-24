@@ -1,0 +1,23 @@
+ MVC:
+ =========
+
+ Model: model is javascript object, which stores data
+ =====
+
+ View: it is a html file based on view engin e, used to display model data 
+ =====
+
+ Controller: it is a function passes model object to view 
+ ===========
+
+controller calls model
+controller calls view
+view class model
+Steps:
+-------
+-> User send request to controller throgh browser 
+-> Controller creates or calls a model object 
+
+-> Controller calls the view and send model object to view file
+-> view reads the data from model object and render same to user 
+

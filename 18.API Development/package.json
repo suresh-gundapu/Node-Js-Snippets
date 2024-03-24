@@ -1,0 +1,11 @@
+{
+  "name": "18.api-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "latest"
+  },
+  "author": "",
+  "license": "ISC"
+}

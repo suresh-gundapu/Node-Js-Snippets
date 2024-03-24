@@ -1,0 +1,56 @@
+EJS:
+======
+=> Embeded Javascript.
+=> It is a view engine .
+=> it enables the sever side JS code into view file and executes the same at server
+EJS = HTML + server side JS code
+easy to learn
+less used in real time
+file extension is .ejs
+Install:
+----------
+
+package.json
+
+"dependencies":{
+"ejs":latest
+}
+
+How to pass model object into view file :
+---------------------------------------
+var ejs = require('ejs');
+
+app.set("view engine","ejs");
+
+var model = {property:value,..}
+
+res.render("viewfilename",model);
+
+syntax:
+
+<%
+server side javasript code
+%>
+
+varable declaration :
+
+<% = varaible %>
+if condition 
+
+<% if((){ %>
+html code here
+<%}else {%>
+html code here
+<%}%>
+
+for loop:
+
+<% for() { %>
+html code
+<%}%>
+
+Partials:
+
+includes will add like 
+
+<% include filename.ejs %>

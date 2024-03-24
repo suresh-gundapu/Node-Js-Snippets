@@ -1,0 +1,52 @@
+Mustache:
+----------
+It is a view engine 
+It enables the server side javascript code in the view and executes same at server side
+extension should be .Mustache
+
+
+depaendencies:{
+
+  "mustache-express":"latest"
+}
+pass model object to view mustache
+---------------------------------
+
+var mustacheexpress = require('mustache-express');
+
+app.engine('mustache',mustacheexpress());
+
+app.set('view engine' ,"mustache");
+
+var model = {x:10..}
+
+res.render('index.mustache',model);
+
+
+syntax:
+-------
+
+It is same like laravbel blade template
+
+varaible:
+{{varaible}}
+
+if condition:
+{{#booleanprperty}}
+
+codehere
+
+{{/endbolean}}
+
+else:
+{{^booleanprperty}}
+
+codehere
+
+{{/endbolean}}
+
+for loop for array :
+
+{{#array}}
+
+{{/array}}
