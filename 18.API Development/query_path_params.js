@@ -46,7 +46,7 @@ app.app1.get('/',(req,res)=>{
   }else{
     res.send("Hello");
   }
-});
+}) ;
 
 
 // path paams example localhost:7070/para/hyerabad

@@ -6,10 +6,6 @@ app.listen(7070,()=>{
 console.log('server startted');
 });
 
-
-
-
-
 app.get("/",(req,res)=>{
 
   res.sendFile(__dirname + "/login.html");
