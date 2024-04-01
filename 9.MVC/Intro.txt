@@ -21,3 +21,21 @@ Steps:
 -> Controller calls the view and send model object to view file
 -> view reads the data from model object and render same to user 
 
+TEMPLATE ENGINES:
+----------------
+
+Template engin used to create an HTML template with minimal code . it can inject data into HTML template 
+at client side and produce final html code 
+important template engine for node js
+a)jade(pug) 
+b)EJS
+c)mustache
+
+Advantages:
+-----------
+
+-> Improves application productivity
+-> improves readebilty and mainatainability 
+-> maximizes client side process
+
+
