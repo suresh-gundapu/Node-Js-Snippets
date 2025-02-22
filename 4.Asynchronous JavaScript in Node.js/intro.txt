@@ -1,0 +1,11 @@
+🎯 Goal: Learn Async Programming, so your APIs work efficiently.
+
+✅ Understanding Callbacks, Promises & Async/Await
+✅ Using fs.promises for File Handling
+✅ Using axios & fetch for API calls
+✅ Handling Errors using try-catch in Async Functions
+
+📌 Hands-on Task:
+
+Convert callbacks to Promises
+Fetch data from an external API using axios

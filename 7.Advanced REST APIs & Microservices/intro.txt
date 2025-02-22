@@ -1,0 +1,12 @@
+🎯 Goal: Learn API Architecture & Microservices
+
+✅ Structuring Large Express Apps (MVC Architecture)
+✅ Using API Gateway for microservices
+✅ Implementing Rate Limiting (Express Rate Limit)
+✅ Implementing Caching with Redis
+✅ Logging & Monitoring using Winston & Morgan
+
+📌 Hands-on Task:
+
+Split an E-commerce API into multiple services (user-service, order-service)
+Implement Redis caching for API responses

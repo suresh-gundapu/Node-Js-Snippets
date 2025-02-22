@@ -1,0 +1,12 @@
+ Goal: Understand how to manage dependencies in Node.js.
+
+✅ Understanding package.json & package-lock.json
+✅ Installing, Updating, and Removing Packages (npm install express)
+✅ Using Dev Dependencies (npm install --save-dev nodemon)
+✅ Understanding Semantic Versioning (semver)
+✅ Global vs Local Packages
+
+📌 Hands-on Task:
+
+Install Express.js and use it in a project
+Install nodemon to auto-restart the server

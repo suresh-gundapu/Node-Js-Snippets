@@ -1,0 +1,34 @@
+/**
+ *  3️⃣ Setting Up MongoDB & Mongoose
+ * ===================================
+Step 1: Install MongoDB & Mongoose
+👉 If you haven’t installed MongoDB, use MongoDB Atlas (Cloud DB) or install it locally.
+👉 Install Mongoose in your Node.js project:
+
+npm install mongoose
+
+Step 2: Connect to MongoDB
+==========================
+Create a new file db.js to manage the connection:
+
+
+const mongoose = require("mongoose");
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect("mongodb://localhost:27017/mydatabase", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("🔥 MongoDB Connected!");
+  } catch (error) {
+    console.error("MongoDB Connection Error:", error);
+    process.exit(1);
+  }
+};
+
+module.exports = connectDB;
+👉 If you are using MongoDB Atlas (Cloud DB), replace the connection string:
+
+
+await mongoose.connect("mongodb+srv://<username>:<password>@cluster.mongodb.net/mydatabase");

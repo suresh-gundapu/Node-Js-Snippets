@@ -1,0 +1,123 @@
+### **📌 4️⃣ Creating Models (Schemas in Mongoose) 🚀**  
+==========================================================
+
+Macha, **Mongoose schemas** define the **structure** of documents inside MongoDB collections.  
+Schemas help enforce **data consistency** and allow us to perform validations before saving data.  
+
+---
+
+## **✅ 1️⃣ What is a Mongoose Schema?**
+=========================================
+👉 **A schema is like a blueprint** for how data should be stored in MongoDB.  
+👉 It helps **define fields, data types, validation rules, and relationships** between documents.  
+
+✅ **Example Schema for a User Collection:**
+
+const mongoose = require("mongoose");
+
+const UserSchema = new mongoose.Schema({
+  name: { type: String, required: true }, // Name is required
+  email: { type: String, unique: true, required: true }, // Email must be unique
+  age: { type: Number, required: true, min: 18 }, // Age must be 18 or above
+  createdAt: { type: Date, default: Date.now } // Default timestamp
+});
+
+module.exports = mongoose.model("User", UserSchema);
+```
+📌 **Now, MongoDB will store users like this:**
+```json
+{
+  "_id": "6510abcd1234",
+  "name": "Suresh",
+  "email": "suresh@gmail.com",
+  "age": 28,
+  "createdAt": "2025-02-21T09:30:00.123Z"
+}
+```
+
+---
+
+## **✅ 2️⃣ Create a Product Schema**
+Macha, let’s **add another schema** for products.
+
+🔹 **Create `models/Product.js`**
+const mongoose = require("mongoose");
+
+const ProductSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  price: { type: Number, required: true },
+  category: { type: String, enum: ["Electronics", "Fashion", "Grocery"], required: true },
+  stock: { type: Number, default: 0 },
+});
+
+module.exports = mongoose.model("Product", ProductSchema);
+```
+✅ **Example Product Document in MongoDB**
+```json
+{
+  "_id": "6510abcd5678",
+  "name": "iPhone 14",
+  "price": 75000,
+  "category": "Electronics",
+  "stock": 50
+}
+```
+
+---
+
+## **✅ 3️⃣ Advanced Schema Features**
+### **1️⃣ Adding Methods to Schema**
+👉 You can add **custom functions** inside a schema.
+```javascript
+UserSchema.methods.getFullName = function () {
+  return `User: ${this.name}`;
+};
+```
+Now, you can call:  
+```javascript
+const user = await User.findById("6510abcd1234");
+console.log(user.getFullName()); // Output: "User: Suresh"
+```
+
+---
+
+### **2️⃣ Using `pre` Hooks for Middleware**
+👉 **Runs before saving the document.**
+```javascript
+UserSchema.pre("save", function (next) {
+  console.log(`Saving user: ${this.name}`);
+  next();
+});
+```
+
+---
+
+### **3️⃣ Virtual Fields (Not Stored in DB)**
+👉 **Virtual fields allow computed properties.**
+```javascript
+UserSchema.virtual("isAdult").get(function () {
+  return this.age >= 18;
+});
+```
+Now, when fetching a user:
+```javascript
+const user = await User.findById("6510abcd1234");
+console.log(user.isAdult); // Output: true
+```
+
+---
+
+### **4️⃣ Adding Indexes for Faster Queries**
+👉 **Indexing improves search performance.**
+```javascript
+UserSchema.index({ email: 1 });
+``` 
+
+---
+
+## **✅ 4️⃣ Hands-on Tasks 🚀**
+✅ **Task 1:** Create a `models/Order.js` schema with fields **product, user, price, status**.  
+✅ **Task 2:** Add **pre-save middleware** in the User schema to log a message before saving.  
+✅ **Task 3:** Add a **virtual field** to show if a product is in stock (`stock > 0`).  
+
+---

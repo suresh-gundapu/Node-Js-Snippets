@@ -1,0 +1,17 @@
+🎯 Goal: Learn to connect databases with Node.js.
+
+MongoDB (NoSQL) + Mongoose ORM
+✅ Install MongoDB & Mongoose (npm install mongoose)
+✅ Connect to MongoDB Atlas (Cloud Database)
+✅ CRUD Operations with MongoDB
+
+MySQL + Sequelize ORM
+✅ Install MySQL & Sequelize (npm install sequelize mysql2)
+✅ Define Models & Relationships
+✅ Querying Data using Sequelize
+
+📌 Hands-on Task:
+
+Create User & Product models in MongoDB
+Fetch & store user data in a MongoDB collection
+Connect MySQL database and store orders data

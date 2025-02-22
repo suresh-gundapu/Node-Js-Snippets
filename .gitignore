@@ -2,11 +2,17 @@
 
 # dependencies
 /node_modules
+/1.Node.js Fundamentals (Basics)/Task6/node_modules
 /5.Express Package/node_modules
-/6.Routing/node_modules
-/9.MVC/EJS/node_modules
-/9.MVC/Mustache/node_modules
-/18.API Development/node_modules
+/3.Building Web Servers with Express.js/6.Routing/node_modules
+/3.Building Web Servers with Express.js/9.MVC/EJS/node_modules
+/3.Building Web Servers with Express.js/9.MVC/Mustache/node_modules
+/3.Building Web Servers with Express.js/18.API Development/node_modules
+/3.Building Web Servers with Express.js/Task1/node_modules
+/3.Building Web Servers with Express.js/Express_Package/node_modules
+/3.Building Web Servers with Express.js/Task3/node_modules
+/5.Database Connectivity (MongoDB & MySQL)/MangoDB/CRUD
+/5.Database Connectivity (MongoDB & MySQL)/MySQL/CRUD
 
 
 /.pnp

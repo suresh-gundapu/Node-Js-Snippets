@@ -1,0 +1,18 @@
+ 1️⃣ What is MongoDB?
+ ====================
+👉 MongoDB is a NoSQL database that stores data in documents (JSON format) instead of tables.
+👉 It is schema-less, meaning we don't need to define a strict structure for our 
+data like SQL databases.
+👉 It scales easily, making it great for high-traffic applications.
+
+✅ MongoDB Example Document (Stored in Collection)
+
+
+{
+  "_id": "6510abcd1234",
+  "name": "Suresh",
+  "email": "suresh@gmail.com",
+  "age": 28
+}
+✅ MongoDB stores data in a collection (similar to a SQL table), but it's flexible!
+

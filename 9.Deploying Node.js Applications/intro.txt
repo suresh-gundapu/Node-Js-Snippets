@@ -1,0 +1,11 @@
+Goal: Deploy your apps on Cloud & Production Servers
+
+✅ Deploy to Heroku, Railway, or Render
+✅ Use PM2 for process management
+✅ Reverse Proxy using Nginx
+✅ Dockerize a Node.js App (Dockerfile)
+
+📌 Hands-on Task:
+
+Deploy your API to Heroku
+Run your API inside a Docker container

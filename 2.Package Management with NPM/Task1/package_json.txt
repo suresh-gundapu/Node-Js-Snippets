@@ -1,0 +1,30 @@
+ 1️⃣ Understanding package.json & package-lock.json
+🔹 What is package.json?
+✅ package.json is a blueprint of your Node.js project.
+✅ It stores project details, dependencies, scripts, and metadata.
+✅ It helps others install all required packages using:
+npm install
+👉 Create package.json manually:
+
+
+npm init
+👉 OR Quickly create it without questions:
+
+
+npm init -y
+✅ This will generate a package.json file like:
+
+
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "description": "My first Node.js project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "Suresh",
+  "license": "MIT"
+}

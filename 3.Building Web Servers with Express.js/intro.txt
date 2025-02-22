@@ -1,0 +1,13 @@
+🎯 Goal: Learn to create REST APIs using Express.js
+
+✅ Setup Express Server
+✅ Handling GET, POST, PUT, DELETE Requests
+✅ Understanding Middlewares (app.use())
+✅ Handling Query Params & Route Params
+✅ Error Handling in Express
+
+📌 Hands-on Task:
+
+Create a CRUD API with Express (GET /users, POST /users, etc.)
+Handle query params (GET /users?name=Suresh)
+Create a custom middleware for logging requests

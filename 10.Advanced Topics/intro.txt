@@ -1,0 +1,12 @@
+🎯 Goal: Become an Expert Node.js Developer
+
+✅ GraphQL API with Node.js
+✅ Microservices Architecture in Node.js
+✅ Message Queues (RabbitMQ, Kafka)
+✅ Serverless Functions (AWS Lambda)
+✅ Unit Testing with Jest & Supertest
+
+📌 Hands-on Task:
+
+Build a GraphQL API
+Implement a Message Queue System using RabbitMQ

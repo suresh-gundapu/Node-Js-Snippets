@@ -1,0 +1,42 @@
+Modules:
+---------
+
+In node js  module is Javascript file means it contain own text and cannot interfere with other modules
+ or pollute global scope
+
+module can be reused through the entire application   
+
+module can be placed separate js file under separate folders
+
+
+Main use of it is module can share properties , varables , function to other module 
+
+By default one module properties , varables, functions cant share to another module we have to use
+ export keyword to share
+
+the source module exposes an object is called "exports"
+
+the destination module can importing that properties etc, by using require keyword
+
+
+source_module.js:
+-----------------
+
+let a = 2;
+
+export.title = a;
+
+destination_module.js:
+-----------------------
+
+var refVar = require("./source_module.js");
+
+console.log('refVar.title');
+
+
+Types of modules:
+===============
+
+1)Core modules or pre defined ex: fs, http , query string modules etc., 
+2) Local Modules ex: custom modules
+3) Third Party modules ex: cors,mysql,express

@@ -1,0 +1,47 @@
+🎯 Goal: Understand how Node.js works, write basic programs, and use core modules.
+
+✅ Install Node.js & NPM (Check version: node -v, npm -v)
+✅ Understanding Blocking vs Non-Blocking (Asynchronous) Execution
+✅ Learn Global Objects (__dirname, __filename, process, console)
+✅ Work with Core Modules:
+
+fs (File System) – Read/Write Files
+http – Create a Basic Web Server
+path – File Path Manipulation
+os – System Information
+✅ Understanding Event Loop & Callbacks
+📌 Hands-on Task:
+
+Create a simple "Hello, Node.js!" script
+Read & Write files using the fs module
+Create a basic HTTP server using the http module
+
+Node Js:
+========
+
+Node Js is a run time execution environment that excutes  Javascript code outside browser(servers).
+
+-> intially node js is client side scripting menas always executes by browsers, in 2009 rhyan dhan made 
+
+NodeJs = c++ and chrome v8 enjine 
+
+-> It build at google chrome JS v8 engine
+
+Features:
+========
+
+-> Dynamic web pages : server-side we can make dynamic apps
+
+-> Free to use and open source
+-> cross platform --supports all operating sustems
+-> Very fastest language beacuse internally used js v8 engine 
+-> I/O -non blocking model: the file and db operations done asynchromously means server executes another request while file /db connection or response underprocesss
+
+
+Applications:
+============
+
+-> I/O bound Applications
+-> live data streaming Applications
+-> Json api based Applications
+-> SPA

@@ -1,0 +1,9 @@
+What is Mongoose?
+==================
+👉 Mongoose is an ORM (Object Data Modeling library) for MongoDB in Node.js.
+👉 It provides schema validation, query building, and middleware support for MongoDB.
+
+✅ Why Use Mongoose?
+1️⃣ Schema Validation – Ensures data consistency
+2️⃣ Pre-defined Query Functions – Makes CRUD operations easier
+3️⃣ Middleware Support – Runs custom functions before/after saving data

@@ -1,0 +1,47 @@
+Sequelize is a popular ORM (Object-Relational Mapper) for Node.js that helps
+ interact with MySQL databases easily. It provides a structured way to define models,
+  relationships, perform queries, and handle transactions.
+
+✅ 1. Install Sequelize & MySQL2:
+----------------------------------
+To use Sequelize, install it along with the MySQL driver:
+
+
+npm install sequelize mysql2
+
+
+Sequelize: The ORM that helps interact with the MySQL database.
+mysql2: The MySQL driver that enables communication with the MySQL database.
+
+✅ 2. Connect to MySQL Database:
+---------------------------------
+First, create a connection to your MySQL database.
+
+🔹 Create db.js for Database Connection
+
+const { Sequelize } = require("sequelize");
+
+// Initialize Sequelize instance
+const sequelize = new Sequelize("mydb", "root", "password", {
+  host: "localhost",
+  dialect: "mysql",
+  logging: false, // Set true to log queries
+});
+
+sequelize.authenticate()
+  .then(() => console.log("🔥 MySQL Connected Successfully!"))
+  .catch(err => console.error("❌ MySQL Connection Error:", err));
+
+module.exports = sequelize;
+
+
+Explanation:
+----------
+"mydb" → Replace with your actual database name.
+"root" → Replace with your MySQL username.
+"password" → Replace with your MySQL password.
+dialect: "mysql" → Specifies that Sequelize should use MySQL.
+To test the connection, run:
+
+
+node db.js

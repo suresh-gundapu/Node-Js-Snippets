@@ -1,0 +1,13 @@
+🔹 Sync Models with Database:
+=================================
+To create tables, sync models with the database.
+
+Create syncModels.js:
+
+
+const sequelize = require("./db");
+const User = require("./models/User");
+
+sequelize.sync({ force: false }) // Set true to drop tables and recreate them
+  .then(() => console.log("✅ Database Synced! Tables Created"))
+  .catch(err => console.error("❌ Error Syncing Database:", err));

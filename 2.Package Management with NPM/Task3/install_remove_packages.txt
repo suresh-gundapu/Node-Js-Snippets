@@ -1,0 +1,29 @@
+📌 2️⃣ Installing, Updating & Removing Packages
+🔹 Installing Packages (Dependencies)
+👉 Install Express.js as a dependency:
+
+
+npm install express
+✅ This will:
+1️⃣ Download Express.js from NPM Registry
+2️⃣ Add it to node_modules/ folder
+3️⃣ Update package.json under "dependencies"
+4️⃣ Update package-lock.json
+
+👉 Now, check your package.json, you will see:
+
+"dependencies": {
+  "express": "^4.18.2"
+}
+🔹 Installing Dev Dependencies
+✅ Dev dependencies are used only for development (not for production).
+👉 Example: Install Nodemon for auto-restart:
+
+
+npm install --save-dev nodemon
+✅ Check package.json, you will see:
+
+
+"devDependencies": {
+  "nodemon": "^2.0.15"
+}

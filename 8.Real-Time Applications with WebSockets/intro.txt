@@ -1,0 +1,9 @@
+🎯 Goal: Learn Socket.io for real-time communication
+
+✅ Install & Use Socket.io
+✅ Create a Realtime Chat App
+✅ Implement Live Notifications
+
+📌 Hands-on Task:
+
+Build a Chat App using WebSockets

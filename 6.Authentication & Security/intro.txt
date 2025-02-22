@@ -1,0 +1,12 @@
+🎯 Goal: Secure your API with JWT & bcrypt
+
+✅ User Authentication with JWT (JSON Web Tokens)
+✅ Secure Passwords using bcrypt
+✅ Using dotenv to store environment variables
+✅ Enable CORS for cross-origin requests
+✅ Input Validation using Joi or Express Validator
+
+📌 Hands-on Task:
+
+Implement user login/signup using JWT
+Secure API endpoints (/dashboard should require login)

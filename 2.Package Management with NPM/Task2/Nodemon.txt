@@ -1,0 +1,13 @@
+Install Nodemon for Auto-Restart
+👉 Install Nodemon globally:
+
+
+npm install -g nodemon
+👉 Run your server with Nodemon:
+
+nodemon server.js
+✅ Now, the server will restart automatically whenever you make changes! 🔥
+
+altalternativelyrnatovely  if you get errors 
+
+run npx nodemon app1.js  
